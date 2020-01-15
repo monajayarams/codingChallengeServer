@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 
 app.get('/getCodeChallengeListItems', (req, res) => {
 	res.setHeader('Access-Control-Allow-Origin', '*');
-    res.json(inputJSON);
+    res.status(200).json(inputJSON)
 });
 
 app.post('/sendMessage',(req,res) => {
