@@ -1,0 +1,22 @@
+{
+  "name": "code-challenge-api",
+  "version": "1.0.0",
+  "description": "Simple GET and POST Api for the code challenge to retrieve list items and to validate message",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "keywords": [
+    "Code",
+    "Challenge",
+    "REST",
+    "API"
+  ],
+  "author": "Mona Jayaram",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security"
+  }
+}
