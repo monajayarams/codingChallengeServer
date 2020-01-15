@@ -25,7 +25,8 @@ npm test
 This app is also hosted in Heroku, 
 
 ```
-https://heroku.app.codechallenge/
+GET: https://mj-coding-challenge-server.herokuapp.com/getCodeChallengeListItems
+POST: https://mj-coding-challenge-server.herokuapp.com/sendMessage
 ```
 
 ## Business Logic ##
