@@ -17,6 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.get('/getCodeChallengeListItems', (req, res) => {
+	res.setHeader('Access-Control-Allow-Origin', '*');
     res.json(inputJSON);
 });
 
@@ -24,6 +25,7 @@ app.post('/sendMessage',(req,res) => {
     let random = Math.floor(Math.random() * 10);
     let isSuccess = random % 2 == 0;
     let responseMessage = isSuccess ? "Message Received..! Thank you." : "Message Denied..! Thank you.";
+	res.setHeader('Access-Control-Allow-Origin', '*');
     let response = {
         "requestMessage": req.body.message,
         "responseMessage": responseMessage
